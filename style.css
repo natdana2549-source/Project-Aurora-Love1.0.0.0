@@ -1,0 +1,199 @@
+/* ===========================
+        Project Aurora Love
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    overflow:hidden;
+
+    background:#050816;
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/* Background */
+
+.background{
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+    radial-gradient(circle at top left,#ff5ea8 0%,transparent 40%),
+
+    radial-gradient(circle at top right,#5ecbff 0%,transparent 40%),
+
+    radial-gradient(circle at bottom,#b45eff 0%,transparent 45%),
+
+    #050816;
+
+    animation:bgMove 12s ease infinite;
+
+    z-index:-5;
+
+}
+
+@keyframes bgMove{
+
+0%{
+
+transform:scale(1);
+
+filter:hue-rotate(0deg);
+
+}
+
+50%{
+
+transform:scale(1.15);
+
+filter:hue-rotate(40deg);
+
+}
+
+100%{
+
+transform:scale(1);
+
+filter:hue-rotate(0deg);
+
+}
+
+}
+
+/* Card */
+
+.card{
+
+width:500px;
+
+max-width:90%;
+
+padding:40px;
+
+border-radius:30px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.15);
+
+text-align:center;
+
+box-shadow:
+
+0 0 40px rgba(0,0,0,.4);
+
+}
+
+/* Cat */
+
+.cat-area img{
+
+width:220px;
+
+margin-bottom:20px;
+
+}
+
+/* Title */
+
+h1{
+
+font-size:40px;
+
+color:white;
+
+margin-bottom:15px;
+
+}
+
+/* Subtitle */
+
+p{
+
+color:#ddd;
+
+margin-bottom:35px;
+
+}
+
+/* Buttons */
+
+.buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+}
+
+/* Button */
+
+button{
+
+border:none;
+
+padding:15px 35px;
+transition:0.4s ease;
+
+font-size:20px;
+
+border-radius:50px;
+
+cursor:pointer;
+
+transition:.3s;
+
+font-weight:bold;
+
+}
+
+#yesBtn{
+
+background:#ff4f9d;
+
+color:white;
+
+}
+
+#yesBtn:hover{
+
+transform:scale(1.1);
+
+box-shadow:
+
+0 0 25px #ff4f9d;
+
+}
+
+#noBtn{
+
+background:white;
+
+}
+
+#noBtn:hover{
+
+transform:translateY(-5px);
+
+}
